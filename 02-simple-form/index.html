@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h2>A Simple Form</h2>
+<h3><em>Form Fundamentals</em></h3>
+
+<form action="" method="">
+
+	<fieldset>
+		<legend>Costumer Info</legend>
+
+			<div>
+				 <label> Name
+				    <input type="text" name="username" placeholder="Enter your name" autofocus="" required> 
+				 </label> 
+			</div>
+			<div>
+				  <label> Telephone
+				    <input type="tel" name="telephone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]*" required> 
+				 </label>
+			 </div>
+
+			<div>
+				 <label> Email address
+				    <input type="email" name="mail" placeholder="Enter your email address" required> 
+				 </label>
+			 </div>	
+	</fieldset>
+
+	<br>
+
+	<fieldset>
+		<legend>Books</legend>
+		 <div>
+			<input list="browsers">
+
+				<datalist id="browsers">
+				  <option value="Terror">
+				  <option value="Funny">
+				  <option value="Drama">
+				</datalist>
+
+			  <label> Quantity (Maximum 5)
+			    <input type="number" name="maximum" min="1" max="5"> 
+			 </label> 
+		</div>
+				
+	</fieldset>
+
+	<br>
+
+	<input type="submit" name="submit" value="Send">
+
+</form>
+
+</body>
+</html>
